@@ -1,0 +1,75 @@
+[debug] [2024-03-24T08:51:45.753Z] ----------------------------------------------------------------------
+[debug] [2024-03-24T08:51:45.757Z] Command:       /Users/chernovsi/.nvm/versions/node/v20.11.1/bin/node /Users/chernovsi/.nvm/versions/node/v18.17.1/bin/firebase emulators:start
+[debug] [2024-03-24T08:51:45.757Z] CLI Version:   13.5.2
+[debug] [2024-03-24T08:51:45.757Z] Platform:      darwin
+[debug] [2024-03-24T08:51:45.758Z] Node Version:  v20.11.1
+[debug] [2024-03-24T08:51:45.758Z] Time:          Sun Mar 24 2024 11:51:45 GMT+0300 (Moscow Standard Time)
+[debug] [2024-03-24T08:51:45.758Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-24T08:51:45.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-24T08:51:45.917Z] > authorizing via signed-in user (chernov.sergey@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-03-24T08:51:46.667Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-24T08:51:46.667Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-24T08:51:46.668Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-03-24T08:51:46.674Z] [hub] writing locator at /var/folders/1s/syyy2mh90lz8ywwlgp09ykth0000gp/T/hub-calorimetry.json
+[debug] [2024-03-24T08:51:46.689Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calorimetry [none]
+[debug] [2024-03-24T08:51:47.028Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calorimetry 200
+[debug] [2024-03-24T08:51:47.028Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calorimetry {"projectId":"calorimetry","projectNumber":"928355117916","displayName":"calorimetry","name":"projects/calorimetry","resources":{"hostingSite":"calorimetry"},"state":"ACTIVE","etag":"1_76e168c9-77d8-4961-895c-c3de16bd62d2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-24T08:51:56.364Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "europe-west1"
+      },
+      "site": "calorimetry",
+      "rewrites": [],
+      "redirects": [],
+      "headers": [],
+      "cleanUrls": true,
+      "public": ".firebase/calorimetry/hosting",
+      "webFramework": "next"
+    }
+  ]
+}
+[debug] [2024-03-24T08:51:56.368Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/calorimetry/sites 
+[debug] [2024-03-24T08:51:57.351Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/calorimetry/sites 200
+[debug] [2024-03-24T08:51:57.351Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/calorimetry/sites {"sites":[{"name":"projects/calorimetry/sites/calorimetry","defaultUrl":"https://calorimetry.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-24T08:51:57.352Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calorimetry/webApps/-/config [none]
+[debug] [2024-03-24T08:51:57.981Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calorimetry/webApps/-/config 200
+[debug] [2024-03-24T08:51:57.981Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calorimetry/webApps/-/config {"projectId":"calorimetry","storageBucket":"calorimetry.appspot.com","apiKey":"AIzaSyAk-Dc3PNwHwg-TBboeBxsRjyshrG4dsfQ","authDomain":"calorimetry.firebaseapp.com","messagingSenderId":"928355117916"}
+[info] i  hosting[calorimetry]: Serving hosting files from: .firebase/calorimetry/hosting {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m.firebase/calorimetry/hosting\u001b[22m"}}
+[info] ✔  hosting[calorimetry]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
